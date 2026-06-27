@@ -21,7 +21,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
 }
 
 body {
@@ -72,7 +75,8 @@ h4 {
   color: var(--color-text-primary);
 }
 
-h5, h6 {
+h5,
+h6 {
   font-family: var(--font-sans);
   font-size: var(--text-base);
   font-weight: var(--font-weight-medium);
@@ -108,7 +112,9 @@ samp,
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   font-weight: var(--font-weight-normal);
-  font-feature-settings: "liga" 0, "calt" 0;  /* disable ligatures in data */
+  font-feature-settings:
+    "liga" 0,
+    "calt" 0; /* disable ligatures in data */
 }
 
 /* Ticket ID style — used in table and panel header */
@@ -160,7 +166,7 @@ samp,
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: #c4b5fd;  /* violet-300 */
+  color: #c4b5fd; /* violet-300 */
 }
 
 /* ============================================================
@@ -195,6 +201,6 @@ a:hover {
    ============================================================ */
 
 ::selection {
-  background-color: #ede9fe;  /* violet-100 */
+  background-color: #ede9fe; /* violet-100 */
   color: var(--color-brand-darkest);
 }
